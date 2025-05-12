@@ -1,4 +1,4 @@
-import { store } from '@/lib'
+import { DynamicToast, store } from '@/lib'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { StoreProvider, useStoreRehydrated } from 'easy-peasy'
 
@@ -15,6 +15,7 @@ const MainContainer = ({ children }) => {
   return (
     <StoreProvider store={store}>
       <QueryClientProvider client={queryClient}>
+        <DynamicToast />
         <WaitForStateRehydration>{children}</WaitForStateRehydration>
       </QueryClientProvider>
     </StoreProvider>

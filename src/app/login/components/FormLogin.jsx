@@ -1,14 +1,19 @@
-import { DynamicPassword } from '@/lib/ui'
 import { Box, Button, Link, TextField } from '@mui/material'
 import { Controller, useForm } from 'react-hook-form'
 import { buttonLoginStyles } from '../styles'
+import { DynamicPassword } from '@/lib'
+import toast from 'react-hot-toast'
 
 const FormLogin = () => {
   const form = useForm()
+  const onSubmit = () => {
+    toast.success('Sesión iniciada correctamente')
+  }
 
   return (
     <Box
       component='form'
+      onSubmit={form.handleSubmit(onSubmit)}
       sx={{
         display: 'flex',
         flexDirection: 'column',
