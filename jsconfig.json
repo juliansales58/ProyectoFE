@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // Establece la raíz del proyecto como base para las rutas relativas
+    "paths": {
+      "@/*": ["src/*"] // Define un alias '@' que apunta a la carpeta 'src'
+    }
+  },
+  "include": ["src/**/*"] // Incluye todos los archivos dentro de la carpeta 'src' y sus subcarpetas
+}
