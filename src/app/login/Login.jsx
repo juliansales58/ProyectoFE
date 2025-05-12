@@ -1,5 +1,7 @@
+import { ViewLogin } from './views'
+
 const Login = () => {
-  return <div>Login</div>
+  return <ViewLogin />
 }
 
 export default Login
