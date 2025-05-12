@@ -1,2 +1,2 @@
-export * from './MainContainer.jsx'
+export * from './mainContainer.jsx'
 export * from './routes'
