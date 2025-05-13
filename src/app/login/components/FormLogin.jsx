@@ -3,11 +3,15 @@ import { Controller, useForm } from 'react-hook-form'
 import { buttonLoginStyles } from '../styles'
 import { DynamicPassword } from '@/lib'
 import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 
 const FormLogin = () => {
   const form = useForm()
+  const navigate = useNavigate()
+
   const onSubmit = () => {
     toast.success('Sesión iniciada correctamente')
+    navigate('/home')
   }
 
   return (

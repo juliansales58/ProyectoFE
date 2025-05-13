@@ -1,9 +1,17 @@
-import { Outlet } from 'react-router-dom'
+import { AppContainer } from '@/lib/components/sidebar'
+import { Outlet, useLocation } from 'react-router-dom'
 
 const GeneralLayout = () => {
+  const location = useLocation()
+  const hideSidebar = location.pathname === '/'
+
   return (
     <>
-      <Outlet />
+      {!hideSidebar && (
+        <AppContainer>
+          <Outlet />
+        </AppContainer>
+      )}
     </>
   )
 }
