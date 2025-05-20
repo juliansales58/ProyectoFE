@@ -3,17 +3,18 @@ import { Navbar, Sidebar } from '.'
 
 const AppContainer = ({ children }) => {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', height: '100vh' }}>
       <CssBaseline />
       <Navbar />
       <Sidebar />
       <Box
         component='main'
         sx={{
-          flexGrow: 1,
-          p: 3,
-          width: `calc(100% - 240px)`,
           mt: '96px',
+          flexGrow: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden',
         }}
       >
         {children}

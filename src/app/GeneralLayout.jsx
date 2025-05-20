@@ -7,7 +7,9 @@ const GeneralLayout = () => {
 
   return (
     <>
-      {!hideSidebar && (
+      {hideSidebar ? (
+        <Outlet />
+      ) : (
         <AppContainer>
           <Outlet />
         </AppContainer>

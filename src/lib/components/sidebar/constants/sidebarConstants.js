@@ -1,4 +1,10 @@
-import { ArticleOutlined, CalendarMonthOutlined, FolderCopyOutlined } from '@mui/icons-material'
+import {
+  ArticleOutlined,
+  CalendarMonthOutlined,
+  DashboardOutlined,
+  FolderCopyOutlined,
+  PersonOutlined,
+} from '@mui/icons-material'
 
 export const elementsSidebar = [
   {
@@ -15,5 +21,13 @@ export const elementsSidebar = [
   {
     label: 'Documentos',
     icon: FolderCopyOutlined,
+  },
+  {
+    label: 'Fichas',
+    icon: DashboardOutlined,
+  },
+  {
+    label: 'Usuarios',
+    icon: PersonOutlined,
   },
 ]
