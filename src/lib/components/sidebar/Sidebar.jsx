@@ -21,6 +21,7 @@ const Sidebar = () => {
         <DynamicListItem
           Icon={HomeOutlined}
           text='Home'
+          path='/home'
         />
       </List>
       <Divider />
@@ -30,6 +31,7 @@ const Sidebar = () => {
             key={index}
             Icon={item.icon}
             text={item?.label}
+            path={item?.path}
             sx={{ ...item?.sx }}
           />
         ))}
@@ -39,6 +41,7 @@ const Sidebar = () => {
         <DynamicListItem
           Icon={LogoutOutlined}
           text='Cerrar sesión'
+          path='/'
         />
       </List>
     </Drawer>

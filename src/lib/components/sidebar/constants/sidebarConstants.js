@@ -17,6 +17,7 @@ export const elementsSidebar = [
   {
     label: 'Bitácoras',
     icon: ArticleOutlined,
+    path: '/bitacoras',
   },
   {
     label: 'Documentos',

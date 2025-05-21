@@ -18,13 +18,5 @@ export const userInputs = [
   {
     label: 'Tipo de documento',
     name: 'tipo_documento',
-    sx: {
-      textAlign: 'left',
-    },
-  },
-  {
-    label: 'Editar',
-    name: 'button',
-    type: 'button',
   },
 ]
