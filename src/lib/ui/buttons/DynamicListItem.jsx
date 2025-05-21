@@ -1,4 +1,4 @@
-import { Home, HomeOutlined } from '@mui/icons-material'
+import { HomeOutlined } from '@mui/icons-material'
 import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 import { useLocation, useNavigate } from 'react-router-dom'
 
