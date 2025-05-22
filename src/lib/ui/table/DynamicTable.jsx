@@ -5,7 +5,12 @@ const DynamicTable = ({ rows = [], columns = [], rest }) => {
     <DataGrid
       rows={rows}
       columns={columns}
-      sx={{ backgroundColor: 'backgroundWhite1', minHeight: '300px', ...rest?.sx }}
+      initialState={{
+        pinnedColumns: { right: ['acciones'] },
+      }}
+      autosizeOnMount
+      hideFooterPagination
+      sx={{ minHeight: '300px', ...rest?.sx }}
     />
   )
 }

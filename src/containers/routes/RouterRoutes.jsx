@@ -4,8 +4,8 @@ import Login from '@/app/page'
 import { useStoreState } from 'easy-peasy'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeRoutes } from './home'
-import Bitacoras from '@/app/bitacoras/Bitacoras'
-import { BitacorasRoutes } from './bitacoras'
+import Visitas from '@/app/visitas/Visitas'
+import VisitasRoutes from './visitas/BitacorasRoutes'
 
 const RouterRoutes = () => {
   const userData = useStoreState((state) => state.user.userData)
@@ -37,13 +37,13 @@ const RouterRoutes = () => {
             }
           />
           <Route
-            path='bitacoras'
-            element={<Bitacoras />}
+            path='visitas'
+            element={<Visitas />}
           />
           <Route
-            path='home/*'
+            path='visitas/*'
             element={
-              <BitacorasRoutes
+              <VisitasRoutes
                 Route={Route}
                 Routes={Routes}
               />

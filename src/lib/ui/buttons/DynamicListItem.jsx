@@ -8,7 +8,10 @@ const DynamicListItem = ({ sx = {}, Icon = HomeOutlined, text = '', path }) => {
 
   return (
     <ListItemButton
-      sx={{ ...sx, backgroundColor: pathname.includes(path) ? '#f0f0f0' : 'transparent' }}
+      sx={{
+        ...sx,
+        backgroundColor: pathname.includes(path) && path !== '/' ? '#f0f0f0' : 'transparent',
+      }}
       onClick={() => {
         if (path) {
           navigate(path)

@@ -4,19 +4,19 @@ export const userInputs = [
     name: 'nombre',
   },
   {
-    label: 'Identificación',
-    name: 'identificacion',
+    label: 'Número Ficha',
+    name: 'ficha',
   },
   {
-    label: 'Teléfono',
-    name: 'telefono',
+    label: 'Nombre del programa',
+    name: 'programa',
   },
   {
-    label: 'Correo',
-    name: 'correo',
+    label: 'Fecha',
+    name: 'fecha',
   },
   {
-    label: 'Tipo de documento',
-    name: 'tipo_documento',
+    label: 'Motivo',
+    name: 'motivo',
   },
 ]

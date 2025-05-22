@@ -10,6 +10,7 @@ export const elementsSidebar = [
   {
     label: 'Visitas',
     icon: CalendarMonthOutlined,
+    path: '/visitas',
     sx: {
       mt: 5,
     },
@@ -17,7 +18,6 @@ export const elementsSidebar = [
   {
     label: 'Bitácoras',
     icon: ArticleOutlined,
-    path: '/bitacoras',
   },
   {
     label: 'Documentos',

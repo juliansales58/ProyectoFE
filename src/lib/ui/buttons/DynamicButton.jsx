@@ -11,7 +11,7 @@ const DynamicButton = ({ children, onClick, title, placement, color, disabled, t
       <span>
         <IconButton
           type={type}
-          color={color ?? 'primary'}
+          color={color ?? '#000000'}
           disabled={disabled ?? false}
           onClick={onClick}
         >
