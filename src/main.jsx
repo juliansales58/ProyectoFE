@@ -8,8 +8,8 @@ import { createTheme, ThemeProvider } from '@mui/material'
 const theme = createTheme({
   palette: {
     success: {
-      main: '#39A900', // Cambia el color principal de "success"
-      contrastText: '#ffffff', // Color del texto cuando se usa "success"
+      main: '#39A900',
+      contrastText: '#ffffff',
     },
   },
 })

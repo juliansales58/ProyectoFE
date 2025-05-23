@@ -6,6 +6,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeRoutes } from './home'
 import Visitas from '@/app/visitas/Visitas'
 import VisitasRoutes from './visitas/BitacorasRoutes'
+import Fichas from '@/app/fichas/Fichas'
+import { FichasRoutes } from './fichas'
 
 const RouterRoutes = () => {
   const userData = useStoreState((state) => state.user.userData)
@@ -44,6 +46,19 @@ const RouterRoutes = () => {
             path='visitas/*'
             element={
               <VisitasRoutes
+                Route={Route}
+                Routes={Routes}
+              />
+            }
+          />
+          <Route
+            path='fichas'
+            element={<Fichas />}
+          />
+          <Route
+            path='fichas/*'
+            element={
+              <FichasRoutes
                 Route={Route}
                 Routes={Routes}
               />

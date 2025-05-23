@@ -1,6 +1,6 @@
 import Home from '@/app/home/Home'
 
-const InboxRoutes = ({ Routes, Route }) => {
+const HomeRoutes = ({ Routes, Route }) => {
   return (
     <Routes>
       <Route
@@ -11,4 +11,4 @@ const InboxRoutes = ({ Routes, Route }) => {
   )
 }
 
-export default InboxRoutes
+export default HomeRoutes

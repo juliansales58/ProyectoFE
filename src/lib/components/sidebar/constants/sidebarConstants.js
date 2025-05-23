@@ -26,6 +26,7 @@ export const elementsSidebar = [
   {
     label: 'Fichas',
     icon: DashboardOutlined,
+    path: '/fichas',
   },
   {
     label: 'Usuarios',
