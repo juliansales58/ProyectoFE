@@ -22,6 +22,7 @@ export const elementsSidebar = [
   {
     label: 'Documentos',
     icon: FolderCopyOutlined,
+    path: '/documentos',
   },
   {
     label: 'Fichas',
