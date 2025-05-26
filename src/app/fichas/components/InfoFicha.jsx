@@ -1,6 +1,8 @@
 import { Card, CardMedia, Typography, Box } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 const InfoFicha = ({ ficha }) => {
+  const navigate = useNavigate()
   return (
     <Card
       sx={{
@@ -11,7 +13,9 @@ const InfoFicha = ({ ficha }) => {
         borderRadius: '8px',
         boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
         overflow: 'hidden',
+        cursor: 'pointer',
       }}
+      onClick={() => navigate(`/fichas/${ficha?.numero}`)}
     >
       <Box
         sx={{
@@ -48,13 +52,13 @@ const InfoFicha = ({ ficha }) => {
         }}
       >
         <Typography
-          variant='body2'
+          variant='body1'
           sx={{ fontWeight: 'bold', color: '#4CAF50' }}
         >
           Ficha {ficha?.numero}
         </Typography>
         <Typography
-          variant='body2'
+          variant='h4'
           sx={{ color: '#424242', fontSize: '0.8rem', textAlign: 'center' }}
         >
           {ficha?.programa}

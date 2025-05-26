@@ -1,3 +1,4 @@
+import Ficha from '@/app/fichas/ficha/Ficha'
 import Fichas from '@/app/fichas/Fichas'
 
 const FichasRoutes = ({ Routes, Route }) => {
@@ -6,6 +7,10 @@ const FichasRoutes = ({ Routes, Route }) => {
       <Route
         path='/'
         element={<Fichas />}
+      />
+      <Route
+        path=':fichaId'
+        element={<Ficha />}
       />
     </Routes>
   )

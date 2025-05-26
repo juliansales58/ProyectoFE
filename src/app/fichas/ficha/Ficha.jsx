@@ -1,5 +1,7 @@
+import { ViewFicha } from './views'
+
 const Ficha = () => {
-  return <div>Ficha</div>
+  return <ViewFicha />
 }
 
 export default Ficha

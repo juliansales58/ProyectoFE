@@ -13,7 +13,11 @@ const ViewFichas = () => {
   ]
 
   return (
-    <>
+    <Box
+      display='flex'
+      flexDirection='column'
+      overflow='auto'
+    >
       <Box
         display='flex'
         width='100%'
@@ -47,7 +51,7 @@ const ViewFichas = () => {
           />
         ))}
       </Box>
-    </>
+    </Box>
   )
 }
 
