@@ -9,6 +9,8 @@ import VisitasRoutes from './visitas/BitacorasRoutes'
 import Fichas from '@/app/fichas/Fichas'
 import { FichasRoutes } from './fichas'
 import Documentos from '@/app/documentos/Documentos'
+import UsuariosRoutes from './usuarios/Usuarios'
+import Usuarios from '@/app/usuarios/Usuarios'
 
 const RouterRoutes = () => {
   const userData = useStoreState((state) => state.user.userData)
@@ -68,6 +70,19 @@ const RouterRoutes = () => {
           <Route
             path='documentos'
             element={<Documentos />}
+          />
+          <Route
+            path='usuarios'
+            element={<Usuarios />}
+          />
+          <Route
+            path='usuarios/*'
+            element={
+              <UsuariosRoutes
+                Route={Route}
+                Routes={Routes}
+              />
+            }
           />
         </Route>
       </Routes>

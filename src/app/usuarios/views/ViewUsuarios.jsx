@@ -1,9 +1,9 @@
 import { BasicTitle, DynamicTable, useSearch } from '@/lib'
 import { Box, Button } from '@mui/material'
 import { DynamicSearch } from '@/lib/components/searcher'
-import { columnsDocumentos } from '../constants'
+import { columnsUsuarios } from '../constants'
 
-const ViewDocumentos = () => {
+const ViewUsuarios = () => {
   const searchDocuments = useSearch()
   return (
     <>
@@ -15,8 +15,8 @@ const ViewDocumentos = () => {
         p={10}
         pl={10}
       >
-        <BasicTitle title='Documentos' />
-        <Box sx={{ width: '70%', pt: 4 }}>
+        <BasicTitle title='Usuarios' />
+        <Box sx={{ width: '75%' }}>
           <DynamicSearch
             searchText={searchDocuments?.searchText}
             onChange={searchDocuments?.handleSearchText}
@@ -40,6 +40,24 @@ const ViewDocumentos = () => {
           >
             Buscar
           </Button>
+          <Button
+            variant='contained'
+            color={'success'}
+            sx={{
+              borderRadius: '20px',
+              fontWeight: 'bold',
+              textTransform: 'none',
+              boxShadow: 'none',
+              px: 3,
+              py: 1,
+              ml: 2,
+              '&:hover': {
+                boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
+              },
+            }}
+          >
+            Crear
+          </Button>
         </Box>
       </Box>
       <Box
@@ -54,10 +72,14 @@ const ViewDocumentos = () => {
           pt: 0,
         }}
       >
-        <DynamicTable columns={columnsDocumentos} />
+        <DynamicTable
+          columns={columnsUsuarios}
+          rows={[{ id: 1 }]}
+          getRowId={(row) => row.id}
+        />
       </Box>
     </>
   )
 }
 
-export default ViewDocumentos
+export default ViewUsuarios

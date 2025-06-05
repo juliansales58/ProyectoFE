@@ -32,5 +32,6 @@ export const elementsSidebar = [
   {
     label: 'Usuarios',
     icon: PersonOutlined,
+    path: '/usuarios',
   },
 ]
